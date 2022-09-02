@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 1-1 </title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <script >
+            document.write('<h2>Пример вывода без цикла</h2>');
+            document.write('Число: <b>0</b>');
+            document.write('<br />');
+            document.write('Число: <b>10</b>');
+            document.write('<br />');
+            document.write('Число: <b>20</b>');
+            document.write('<br />');
+            document.write('Число: <b>40</b>');
+            document.write('<br />');
+            document.write('Число: <b>50</b>');
+            document.write('<br />');
+            document.write('Число: <b>60</b>');
+            document.write('<br />');
+            document.write('Число: <b>80</b>');
+            document.write('<br />');
+            document.write('Число: <b>100</b>');
+            document.write('<br />');
+
+            document.write('<hr />');
+            document.write('<h2>Пример вывода, используя цикл FOR </h2>');
+
+            //..............Решение
+
+            var TRY = 11, number = 0;
+            for(var i=0; i<TRY;i++){;         
+                if(number==0||number==10||number==20||number==40||number==50||number==60||number==80||number==100){
+                    document.write('Число: <b>'+number+'</b><br>');
+                }
+                number = number + 10
+            }
+
+        </script>
+
+    </body>
+
+    <footer>
+        <h2>JPTV20 Vassiljev 2022 </h2>
+    </footer>
+</html>

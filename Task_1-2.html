@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task 1-2</title>
+    </head>
+    <body>
+        <h1>Multiply table</h1>
+
+        <script>
+            var number1, number2, summa, UserAnswer, num=0,correct=0;
+
+            for(var i = 0; i <5 ; i++) {
+                number1 = parseInt(Math.random()*11);
+                number2 = parseInt(Math.random()*11);
+                summa = number1 * number2;
+                num++;
+                UserAnswer = prompt('Your answer! \n'+number1+'*'+number2+'=?');
+
+                if(summa==UserAnswer){
+                    var text = num +'. '+number1+'*'+number2+'='+'<span style="color:green; font-weight:bold">'+ summa +'</span><br>';
+                    document.write(text);
+                    correct++;
+
+                }else{
+                    var text = num +'. '+number1+'*'+number2+'='+UserAnswer+' (<span style="color:red; font-weight:bold">'+ summa +'</span>)<br>';
+                    document.write(text);
+                }      
+            }
+            document.write('<br><h3>number of correct answers: '+correct+'</h3><br>');
+            
+            if(correct==5){
+                document.write('<h2 style="color:green";>GREAT JOB!</h2>')
+            }else if(correct==3||correct==4){
+                document.write('<h2 style="color:blue"; >GOOD! But you can do better!</h2>');
+            }else{
+                document.write('<h2 style="color:red";>TRY AGAIN!</h2>');
+            }
+
+
+            
+            
+            
+        </script>
+        
+    </body>
+    
+    <footer>
+        <h2>JPTV20 Vassiljev 2022 </h2>
+    </footer>
+</html>
